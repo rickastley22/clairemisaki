@@ -1,0 +1,45 @@
+body {
+    background-color: beige;
+    color: black;
+    font-family: "Courier New", Courier, monospace;
+/*    background-image: url("/media/fiveish_tile.png");*/
+}
+
+a {
+    color: lightblue;
+}
+
+.video-center-box {
+    display: flex;
+    justify-content: center;
+/*    background-image: url("media/evian_logo.png");*/
+}
+
+.yt-embed-holder{
+    display: flex;
+/*    justify-content: center;*/
+    width: 50%;
+    overflow: hidden;
+    aspect-ratio: 16/9;
+/*    pointer-events: none;*/
+    padding:1%;
+    }
+
+.yt-embed-holder iframe{
+    width: 300%;
+    height: 100%;
+    overflow: hidden;
+/*    margin-left: -100%;*/
+}
+
+/*mobile adjustments*/
+@media (max-width:700px){
+    body {
+        font-size:5vw;
+    }
+    
+    .yt-embed-holder {
+            width: 100%;
+    }
+    
+}
