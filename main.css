@@ -2,7 +2,8 @@ body {
     background-color: beige;
     color: black;
     font-family: "Courier New", Courier, monospace;
-/*    background-image: url("/media/fiveish_tile.png");*/
+/*    cursor: help;*/
+cursor:url("/media/wii_cursor.cur"), auto;
 }
 
 a {
@@ -31,6 +32,55 @@ a {
     overflow: hidden;
 /*    margin-left: -100%;*/
 }
+
+.error-404 {
+    justify-content: center;
+    text-align: center;
+}
+
+.clairemisaki-logo {
+
+}
+
+.clairemisaki-logo img {
+    width: 20%;
+}
+
+.studio-image {
+    text-align: center;
+}
+
+.studio-image img {
+    width: 30%;
+}
+
+/*nav bar*/
+ul {
+  list-style-type: none;
+  margin: 0;
+    padding: 0;
+/*  background-color: grey;*/
+  display: flex;
+  justify-content: center;
+}
+
+ul li a {
+  display: block;
+  color: black;
+  padding: 1px 10px;
+/*    border: 2px solid grey;*/
+  text-decoration: none;
+}
+
+ul li a:hover {
+/*  background-color: #111111;*/
+    color: white;
+}
+
+ul li a.active {
+  background-color: #04AA6D;
+}
+
 
 /*mobile adjustments*/
 @media (max-width:700px){
