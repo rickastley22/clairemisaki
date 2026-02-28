@@ -72,6 +72,9 @@ h1 {
 .roster-list {
     text-align: center;
     padding: 15px;
+/*    font-size: 3vw;*/
+    font-size: 20px;
+
 }
 
 /*merch grid*/
@@ -202,7 +205,7 @@ content: "当社について"
 /*mobile adjustments*/
 @media (max-width:700px){
     body {
-        font-size:5vw;
+        font-size:4vw;
     }
     
     .clairemisaki-logo img {
