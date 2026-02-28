@@ -77,6 +77,14 @@ h1 {
 
 }
 
+.artist-logo {
+    text-align: center;
+}
+
+.artist-logo img {
+    width: 40%;
+}
+
 /*merch grid*/
 .merch-item-grid {
     display: grid;
@@ -198,8 +206,13 @@ content: "ギャラリー"
 content: "当社について"
 }
 
+.scrolling-text {
 
+}
 
+.scrolling-text img {
+    width: 5%;
+}
 
 
 /*mobile adjustments*/
