@@ -205,24 +205,33 @@ content: "当社について"
         font-size:5vw;
     }
     
+    .clairemisaki-logo img {
+        width: 40%;
+    }
+    
+    ul button {
+        width: 8em;
+/*        width: 100%;*/
+    }
+    
     .yt-embed-holder {
             width: 100%;
     }
     
     .hero-image img {
-    width: 100%;
+        width: 100%;
     }
     
     .merch-item-grid {
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
   }
     .gallery-item-grid {
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
   }
     
-    ul button {
-        width: 9em;
-/*        width: 100%;*/
-    }
+    .studio-image img {
+        width: 60%;
+}
+    
     
 }
