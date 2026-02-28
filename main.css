@@ -1,13 +1,16 @@
 body {
-    background-color: beige;
+/*    background-color: beige;*/
+      background-image: linear-gradient(to bottom right, white, beige);
+
     color: black;
     font-family: "Courier New", Courier, monospace;
 /*    cursor: help;*/
 cursor:url("/media/wii_cursor.cur"), auto;
+    
 }
 
 a {
-    color: lightblue;
+    color: steelblue;
 }
 
 .video-center-box {
@@ -54,14 +57,88 @@ a {
     width: 30%;
 }
 
+.hero-image {
+    text-align: center;
+}
+
+.hero-image img {
+    width: 80%;
+}
+
+.roster-list {
+    text-align: center;
+    padding: 15px;
+}
+
+/*merch grid*/
+.merch-item-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-template-rows: 2;
+    
+    text-align: center;
+}
+.merch-item-grid img{
+    width: 70%;
+}
+.merch-item{
+    text-align: center;
+}
+
+/*gallery grid*/
+.gallery-item-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-template-rows: 2;
+    
+    text-align: center;
+}
+.gallery-item-grid img{
+    width: 70%;
+}
+.gallery-item{
+    text-align: center;
+}
+
+
+.live-info{
+    text-align: center;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.submission-info {
+    text-align: center;
+}
+
+.merch-info {
+    text-align: center;
+}
+
 /*nav bar*/
 ul {
-  list-style-type: none;
-  margin: 0;
+    list-style-type: none;
+    margin: 0;
     padding: 0;
-/*  background-color: grey;*/
-  display: flex;
-  justify-content: center;
+    /*  background-color: grey;*/
+    display: flex;
+    justify-content: center;
+}
+
+ul button{
+/*    background-color: lightgrey;*/
+    background-image: linear-gradient(to bottom right, white, lightblue);
+    font-family: "Courier New", Courier, monospace;
+
+/*    background-color: lightgrey;*/
+    border-color: steelblue;
+    border-radius: 0px;
+    cursor:url("/media/wii_cursor.cur"), auto;
+
 }
 
 ul li a {
@@ -70,16 +147,54 @@ ul li a {
   padding: 1px 10px;
 /*    border: 2px solid grey;*/
   text-decoration: none;
+    cursor:url("/media/wii_cursor.cur"), auto;
+    width: 8em;
+    height: 1.4em;
+    text-align: center;
 }
 
-ul li a:hover {
-/*  background-color: #111111;*/
-    color: white;
-}
-
+/*
 ul li a.active {
   background-color: #04AA6D;
 }
+*/
+
+/*hover translations*/
+ul li a:hover {
+/*  background-color: #111111;*/
+    color: steelblue;
+}
+ul li a:hover span {
+display: none;
+}
+
+.home-button:hover:before {
+content: "ホーム"
+}
+.roster-button:hover:before {
+content: "所属アーティスト"
+}
+.merch-button:hover:before {
+content: "グッズ"
+}
+.contact-button:hover:before {
+content: "お問い合わせ"
+}
+.live-button:hover:before {
+content: "ライブ情報"
+}
+.submission-button:hover:before {
+content: "応募"
+}
+.gallery-button:hover:before {
+content: "ギャラリー"
+}
+.about-button:hover:before {
+content: "当社について"
+}
+
+
+
 
 
 /*mobile adjustments*/
