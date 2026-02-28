@@ -1,6 +1,7 @@
 body {
 /*    background-color: beige;*/
-      background-image: linear-gradient(to bottom right, white, beige);
+    background:            linear-gradient(to bottom right, white, beige);
+    background-attachment: fixed;
 
     color: black;
     font-family: "Courier New", Courier, monospace;
@@ -207,12 +208,14 @@ content: "当社について"
 }
 
 .scrolling-text {
-
+   bottom:0;
 }
 
+/*
 .scrolling-text img {
     width: 5%;
 }
+*/
 
 
 /*mobile adjustments*/
@@ -240,10 +243,16 @@ content: "当社について"
     
     .merch-item-grid {
         grid-template-columns: 1fr;
-  }
+    }
     .gallery-item-grid {
         grid-template-columns: 1fr;
-  }
+    }
+    .gallery-item-grid img{
+    width: 80%;
+    }
+    .merch-item-grid img{
+    width: 80%;
+    }
     
     .studio-image img {
         width: 60%;
