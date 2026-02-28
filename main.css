@@ -13,6 +13,10 @@ a {
     color: steelblue;
 }
 
+h1 {
+    text-align: center;
+}
+
 .video-center-box {
     display: flex;
     justify-content: center;
@@ -73,9 +77,11 @@ a {
 /*merch grid*/
 .merch-item-grid {
     display: grid;
+
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-    grid-template-rows: 2;
+    
+/*    grid-gap: 10px;*/
+/*    grid-template-rows: 2;*/
     text-align: center;
 }
 .merch-item-grid img{
@@ -124,7 +130,7 @@ ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    width: 100%;
+/*    width: 100%;*/
     height: 1.4rem;
     
 }
@@ -136,6 +142,7 @@ ul button{
     border-color: steelblue;
     border-radius: 2px;
     cursor:url("/media/wii_cursor.cur"), auto;
+    width: 12em;
 }
 
 ul li a {
@@ -204,6 +211,18 @@ content: "当社について"
     
     .hero-image img {
     width: 100%;
+    }
+    
+    .merch-item-grid {
+    grid-template-columns: 1fr;
+  }
+    .gallery-item-grid {
+    grid-template-columns: 1fr;
+  }
+    
+    ul button {
+        width: 9em;
+/*        width: 100%;*/
     }
     
 }
