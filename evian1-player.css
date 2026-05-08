@@ -186,12 +186,20 @@ content: "所属アーティスト"
         width: 100%;
     }
     
-    .merch-item-grid {
-        grid-template-columns: 1fr;
+.track-select-container {
+    width: 80%;
     }
     
-    .merch-item-grid img{
-    width: 80%;
+    .track-select-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .track-select-grid img{
+    width: 100%;
+    }
+    
+    .title-container {
+            width: 60%;
     }
     
     
