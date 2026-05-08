@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>evian1 | player</title>
+        <meta name="description" content="claire misaki studios">
+        <link rel="stylesheet" href="evian1-player.css">
+        <script src="/evian1.js" defer></script>
+        
+<!--        mobile support-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        <div class="track-select-center-box">
+            <div class="track-select-container">
+                <div class="track-select-bg">
+                    <div class="title-container">
+                        <h1>track select</h1>
+                    </div>
+                   <div class="track-select-grid"> 
+                       <div class="track-item">
+                            <img class="image pixelated" id="track-1-img" src="/media/evian1_media/track-1.png" onclick="changeTrack1()">
+<!--                           <img class="image pixelated" src="/media/evian1_media/track-1-play.gif" onclick="changeTrack1()">-->
+                            <audio id="track-1-source">
+                              <source src="/media/evian1_media/evian1-mp3s/1-we-are-the-girls-v3.mp3" type="audio/mpeg">
+                            </audio>                   
+                        </div>
+                        <div class="track-item">
+                            <img class="image pixelated" id="track-2-img" src="/media/evian1_media/track-2.png" onclick="changeTrack2()">                 
+                            <audio id="track-2-source">
+                              <source src="/media/evian1_media/evian1-mp3s/2-chicagotosaintlouisstlouistochicago-v2.mp3" type="audio/mpeg">
+                            </audio>  
+                        </div>
+                       <div class="track-item">
+                            <img class="image pixelated" id="track-3-img" src="/media/evian1_media/track-3.png" onclick="changeTrack3()"> 
+                            <audio id="track-3-source">
+                              <source src="/media/evian1_media/evian1-mp3s/3-chiodos-cover-band-v5.mp3" type="audio/mpeg">
+                            </audio>  
+                        </div>
+                       <div class="track-item">
+                            <img class="image pixelated" id="track-4-img" src="/media/evian1_media/track-4.png" onclick="changeTrack4()">
+                            <audio id="track-4-source">
+                              <source src="/media/evian1_media/evian1-mp3s/4-cavedive-evian-v3.mp3" type="audio/mpeg">
+                            </audio>  
+                        </div>
+                      <div class="track-item">
+                            <img class="image pixelated" id="track-5-img" src="/media/evian1_media/track-5.png" onclick="changeTrack5()">
+                          <audio id="track-5-source">
+                              <source src="/media/evian1_media/evian1-mp3s/5-kddi-madogucci-v3.mp3" type="audio/mpeg">
+                            </audio> 
+                        </div>
+                        <div class="track-item">
+                            <a href="https://www.clairemisaki.org">
+                                <img class="image pixelated" src="/media/evian1_media/download-button.png">
+                            </a>
+                                <button onclick="pauseAudio()" type="button">⏸</button>
+                                <button onclick="playAudio()" type="button">▶</button> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+<!--
+         <div class="scrolling-text">
+             <marquee>
+                <h3>△ □ □ ○ ○ △ × △ □ ○ ○ ○ × × △ □ △ △ ○ × × × ○ ○ □ □ △ □ □ ○ ○ △ × △ □ ○ ○ ○ × × △ □ △ △ ○ × × × ○ ○ □ □ △ □ □ ○ ○ △ × △ □ ○ ○ ○ × × △ □ △ △ ○ × × × ○ ○ □ □ 
+                 
+                 △ □ ○ × </h3>
+            </marquee>
+             
+            <p>© Claire Misaki 2026</p>
+
+        </div>
+-->
+                    <p>© Claire Misaki 1997</p>
+
+    </body>
+</html>

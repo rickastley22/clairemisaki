@@ -1,0 +1,124 @@
+body {
+    background-color: white;
+/*background-image: url(/media/evian1_media/bg-tile-evian1-edit.png);*/
+    background-size: 10%;
+
+    color: black;
+    font-family: "Courier New", Courier, monospace;
+/*cursor:url("/media/evian1_media/hand.cur"), auto;*/
+    
+}
+
+a {
+    color: darkred;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+.hero-image {
+    text-align: center;
+    align-content: center;
+}
+
+/*
+.menu-links {
+    display: flex;
+    text-align: justify;
+}
+*/
+
+
+.hero-image img {
+    width: 60%;
+}
+
+
+#grindcoreEvian {
+    width: 20%;
+}
+
+#parappaEvian {
+    width: 20%;
+}
+
+#copyright {
+    width: 20%;
+}
+
+
+
+
+}
+.track-item {
+    text-align: center;
+    perspective: 120px;	
+    
+}
+
+
+@keyframes rotateAnimation {
+    from {transform: rotateY(0deg);}
+	to {transform: rotateY(360deg);}
+}
+
+@keyframes none {
+    from {transform: rotateY(0deg);}
+	to {transform: rotateY(0deg);}
+}
+
+
+
+
+/*hover translations*/
+ul li a:hover {
+/*  background-color: #111111;*/
+    color: steelblue;
+}
+ul li a:hover span {
+display: none;
+}
+
+.home-button:hover:before {
+content: "ホーム"
+}
+.roster-button:hover:before {
+content: "所属アーティスト"
+}
+
+.scrolling-text {
+   bottom:0;
+}
+
+
+.pixelated {
+  image-rendering: pixelated;
+}
+
+
+
+
+
+
+
+
+/*mobile adjustments*/
+@media (max-width:700px){
+    body {
+        font-size:4vw;
+    }
+    
+    
+    .yt-embed-holder {
+            width: 100%;
+    }
+    
+    .hero-image img {
+        width: 100%;
+    }
+    
+    
+    
+}

@@ -1,0 +1,198 @@
+body {
+    background-color: white;
+background-image: url(/media/evian1_media/bg-tile-evian1-edit-trippy.gif);
+    background-size: 10%;
+
+    color: black;
+    font-family: "Courier New", Courier, monospace;
+/*cursor:url("/media/evian1_media/hand.cur"), auto;*/
+    
+}
+
+a {
+    color: darkred;
+}
+
+h1 {
+    text-align: center;
+}
+
+.title-container {
+    background: rgb(255 222 33/ 0.8);
+    
+    text-align: left;
+    width: 30%;
+    border-radius: 10px;
+/*
+    padding-top: 1px;
+    padding-bottom: 1px;
+*/
+/*    padding-left: 1px;*/
+}
+
+h3 {
+    font-size: 40px;
+    color: white;
+}
+
+.hero-image {
+    text-align: center;
+}
+
+.hero-image img {
+    width: 60%;
+}
+
+
+
+/*track grid*/
+
+
+.track-select-center-box {
+    display: flex;
+  justify-content: center;
+    padding-top: 6%;
+    padding-bottom: 6%;
+}
+
+.track-select-container {
+/*    overflow: hidden;*/
+    
+/*    background-color: mediumpurple;*/
+        background-color: rgb(85 0 255/ 0.9);
+
+    width:60%;
+    
+      display: flex;
+  justify-content: center;
+  align-items: center;
+/*  border: 5px solid black; */
+    
+    outline: 8px ridge rgb(170 50 220 / 0.6);
+    border-radius: 2rem;
+    
+/*
+        outline: 8px inset black;
+border-radius: 2rem;
+*/
+}
+
+.track-select-bg {
+
+}
+
+.track-select-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+/*    grid-gap: 10px;*/
+/*    grid-template-rows: 2;*/
+    text-align: center;
+    padding-bottom: 5%;
+}
+.track-select-grid img{
+    width: 80%;
+        cursor:url("/media/evian1_media/hand.cur"), auto;
+
+}
+.track-item {
+    text-align: center;
+    perspective: 120px;	
+    
+}
+
+
+@keyframes rotateAnimation {
+    from {transform: rotateY(0deg);}
+	to {transform: rotateY(360deg);}
+}
+
+@keyframes none {
+    from {transform: rotateY(0deg);}
+	to {transform: rotateY(0deg);}
+}
+
+
+
+
+ul button{
+/*    background-color: lightgrey;*/
+    background-image: linear-gradient(to bottom right, white, lightblue);
+    font-family: "Courier New", Courier, monospace;    
+    border-color: steelblue;
+    border-radius: 2px;
+    cursor:url("/media/wii_cursor.cur"), auto;
+    width: 12em;
+}
+
+ul li a {
+  display: block;
+  color: black;
+  padding: 1px 10px;
+/*    border: 2px solid grey;*/
+  text-decoration: none;
+    cursor:url("/media/wii_cursor.cur"), auto;
+    text-align: center;
+}
+
+/*hover translations*/
+ul li a:hover {
+/*  background-color: #111111;*/
+    color: steelblue;
+}
+ul li a:hover span {
+display: none;
+}
+
+.home-button:hover:before {
+content: "ホーム"
+}
+.roster-button:hover:before {
+content: "所属アーティスト"
+}
+
+.scrolling-text {
+   bottom:0;
+}
+
+
+.pixelated {
+  image-rendering: pixelated;
+}
+
+
+
+
+
+
+
+
+/*mobile adjustments*/
+@media (max-width:700px){
+    body {
+        font-size:4vw;
+    }
+    
+    ul button {
+        width: 8em;
+/*        width: 100%;*/
+    }
+    
+    .yt-embed-holder {
+            width: 100%;
+    }
+    
+    .hero-image img {
+        width: 100%;
+    }
+    
+    .merch-item-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .merch-item-grid img{
+    width: 80%;
+    }
+    
+    
+}
