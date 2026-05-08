@@ -161,8 +161,20 @@ content: "所属アーティスト"
 }
 
 
+.pause-play {
+/*    display: flex;*/
+    align-content: center;
+    text-align: center;
+    padding-bottom: 2%;
+}
 
 
+.pause-play button {
+font-size: 20px;
+    width: 10%;
+    background-color: hotpink;
+/*    color: white;*/
+}
 
 
 
@@ -188,6 +200,7 @@ content: "所属アーティスト"
     
 .track-select-container {
     width: 80%;
+    
     }
     
     .track-select-grid {
@@ -199,8 +212,14 @@ content: "所属アーティスト"
     }
     
     .title-container {
-            width: 60%;
+            width: 100%;
     }
     
+    
+    .pause-play button {
+/*font-size: 20px;*/
+    width: 35%;
+}
+
     
 }

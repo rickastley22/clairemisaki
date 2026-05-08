@@ -121,4 +121,23 @@ content: "所属アーティスト"
     
     
     
+    .hero-image img {
+    width: 60%;
+}
+
+
+#grindcoreEvian {
+    width: 80%;
+}
+
+#parappaEvian {
+    width: 50%;
+}
+
+#copyright {
+    width: 60%;
+}
+
+    
+    
 }
