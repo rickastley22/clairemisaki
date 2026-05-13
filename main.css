@@ -210,6 +210,9 @@ content: "当社について"
 .chat-room-button:hover:before {
     content: "チャットルーム"
 }
+.guest-book-button:hover:before {
+    content: "ゲーストブック"
+}
 
 .scrolling-text {
    bottom:0;
@@ -224,13 +227,21 @@ content: "当社について"
 
 /*chat room*/
 .chat-room {
-    align-content: center !important;
     text-align: center !important;
 }
-
 .chat-room iframe {
     width: 50% !important;
     height: 400px !important;
+}
+
+
+.guest-book {
+    text-align: center;
+}
+.guest-book iframe {
+    width: 50%;
+    height: 400px;
+
 }
 
 
@@ -280,8 +291,12 @@ content: "当社について"
 
     .chat-room iframe {
     width: 80% !important;
+/*    height: 300px !important;*/
 }
     
-    
+    .guest-book iframe {
+    width: 80%;
+}
+     
     
 }

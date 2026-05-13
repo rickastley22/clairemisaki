@@ -116,3 +116,11 @@ body, #top_banner, #input {
 #emojiTray, #emojiTrayToggle {
     display: none !important;
 }
+
+
+
+/*to add custom notification sound*/
+/*
+:root {
+  --notification-sfx: https://example.com/path/to/audio.mp3;
+}*/
