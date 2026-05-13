@@ -224,13 +224,13 @@ content: "当社について"
 
 /*chat room*/
 .chat-room {
-    align-content: center;
-    text-align: center;
+    align-content: center !important;
+    text-align: center !important;
 }
 
 .chat-room iframe {
-    width: 50%;
-    height: 400px;
+    width: 50% !important;
+    height: 400px !important;
 }
 
 
@@ -279,7 +279,7 @@ content: "当社について"
 }
 
     .chat-room iframe {
-    width: 80%;
+    width: 80% !important;
 }
     
     
