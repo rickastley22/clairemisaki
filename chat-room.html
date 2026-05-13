@@ -4,14 +4,19 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Claire Misaki Studios | Home</title>
+        <title>Claire Misaki Studios | Chat Room</title>
         <meta name="description" content="claire misaki studios">
         <link rel="stylesheet" href="main.css">
+        
+<!--        call main JS -->
+            <script src="/claire-misaki-studios.js"></script>
         
 <!--        mobile support-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-
+<!--        chatroom embed-->
+        <script src="https://iframe.chat/scripts/main.min.js"></script>
+        
     </head>
     
     <body>
@@ -34,7 +39,8 @@
                 <li><button><a class="gallery-button" href="gallery.html"><span>Gallery</span></a></button></li>
                 <li><button><a class="about-button" href="about.html"><span>About</span></a></button></li>
             </ul>
-<!--            temporary to add chatroom-->
+            
+            <!--            temporary to add chatroom-->
             <ul>
                 <li><button><a class="chat-room-button" href="chat-room.html"><span>Chat Room</span></a></button></li>
                 <li><button><a class="submission-button" href="submission.html"><span>???</span></a></button></li>
@@ -44,16 +50,31 @@
             
         </div>
         
-        <div class="hero-image">
-            <img src="/media/who_is_clairemisaki.png">
+        <h1>Chat Room</h1>
+        
+        <div class="live-info">
+            <p>A place to discuss all things Claire Misaki Studios.</p>
+            <p>チャットルームは 楽しい場ではありますが、お互いを尊重し、気持ちよく過ごせるようお願いいたします。</p>
         </div>
+        
+<!--        chattable theme initialize. can grab editable css from here https://iframe.chat/demo/-->
+        <script>
+        chattable.initialize({
+            theme: "bytechat" // set the value to the name of the theme
+        });
+        </script>
+        
+        <div class="chat-room">
+                <iframe src="https://iframe.chat/embed?chat=clairemisakistudios" id="chattable"></iframe>
+        </div>
+        
+        
         
         <div class="scrolling-text">
              <marquee>
                 <p>© Claire Misaki 2026</p>
-<!--                 <img src="/media/evian_parappa_spin.gif">-->
             </marquee>
         </div>
-
+        
     </body>
 </html>

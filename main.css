@@ -207,6 +207,10 @@ content: "ギャラリー"
 content: "当社について"
 }
 
+.chat-room-button:hover:before {
+    content: "チャットルーム"
+}
+
 .scrolling-text {
    bottom:0;
 }
@@ -216,6 +220,18 @@ content: "当社について"
     width: 5%;
 }
 */
+
+
+/*chat room*/
+.chat-room {
+    align-content: center;
+    text-align: center;
+}
+
+.chat-room iframe {
+    width: 50%;
+    height: 400px;
+}
 
 
 /*mobile adjustments*/
@@ -262,6 +278,10 @@ content: "当社について"
     width: 80%;
 }
 
+    .chat-room iframe {
+    width: 80%;
+}
+    
     
     
 }
