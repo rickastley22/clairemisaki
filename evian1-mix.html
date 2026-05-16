@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>evian1 | mix</title>
+        <meta name="description" content="claire misaki studios">
+        <link rel="stylesheet" href="evian1.css">
+        <script src="/evian1.js" defer></script>
+        
+<!--        mobile support-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+
+    </head>
+    
+    
+    
+    
+    
+    <body>
+        
+        <div class="webdeck-player">
+            <iframe src="/webdeck-player/index.html" height="250" width="600"></iframe>
+           <br>
+            <button onclick="window.open('/webdeck-player/index.html', 'Web Deck Player', 'height=250, width=600')">Open Pop-out Player</button>
+        </div>
+        
+    
+
+        
+        <div class="menu-links">
+           <a href="/evian1.html"><h1>menu</h1></a>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+<!--        psp player-->
+        
+            <div id='psp'>
+        
+              <img id='psfuckenp' src='/psp-player-media/7haKeYk.png' loading="lazy" >
+               
+               <button id='bleft' class='pspbutton' onclick="plusSlides(-1)"><img src='/psp-player-meia/5SCsnG8.png'  loading="lazy" ></button>
+
+               <button id='bright' class='pspbutton' onclick="plusSlides(1)"><img src='/psp-player/7vrur3w.png'  loading="lazy" ></button>
+      
+                 <div id='pspstuff' class="modal">
+                        <div class="modal-content" >
+                      
+      <!-- video 1 ---------------- ------------------>
+                        <div class="mySlides" display='block'>
+                           <iframe width="560" height="315" src="https://www.youtube.com/embed/E_za7jPrqpQ?si=A3zxiyKuGz_deJMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                          </div> 
+      <!---- video 2---------------- ------------------>      
+                        
+                          <div class="mySlides">
+                            <iframe loading='lazy' width="560" height="315" src="https://www.youtube.com/embed/b_NP_kG6Fa4?si=dE4rMo4IumjImHtN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+                           </div>                      
+  <!------ video 3---------------- ------------------>      
+
+           <div class="mySlides">
+              <iframe loading='lazy' width="560" height="315" src="https://www.youtube.com/embed/b_NP_kG6Fa4?si=dE4rMo4IumjImHtN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>   
+                  </div> 
+                          
+  <!------ script---------------- ------------------>                     
+                     
+                <script>
+                        var slideIndex = 1;
+                        showSlides(slideIndex);
+                        
+                        // Next/previous controls
+                        function plusSlides(n) {
+                          showSlides(slideIndex += n);
+                        }
+                        
+                        function showSlides(n) {
+                          var i;
+                          var slides = document.getElementsByClassName("mySlides");
+                          if (n > slides.length) {slideIndex = 1}
+                          if (n < 1) {slideIndex = slides.length}
+                          for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                          }
+                          slides[slideIndex-1].style.display = "block";
+                        }
+                        </script>    
+                      
+                      </div>
+                    </div>
+            </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+<!--
+        <div class="scrolling-text">
+             <marquee>
+                <p>© Claire Misaki 2026</p>
+            </marquee>
+        </div>
+-->
+
+    </body>
+</html>

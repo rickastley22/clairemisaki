@@ -37,11 +37,27 @@ h1 {
 
 
 #grindcoreEvian {
-    width: 20%;
+    width: 50%;
+  position: absolute;
+  top: 20%;           /* Moves the top edge to the container's vertical center */
+  left: 50%;          /* Moves the left edge to the container's horizontal center */
+  transform: translate(-50%, -50%); /* Shifts image back by 50% of its own size */
 }
 
 #parappaEvian {
     width: 20%;
+    animation: scaleLoop .5s ease-in-out infinite alternate;
+
+    padding-top: 10%;
+
+}
+@keyframes scaleLoop {
+  0% {
+    transform: scaleY(); /* Original size */
+  }
+  100% {
+    transform: scaleY(1.03); /* Grow by 20% */
+  }
 }
 
 #copyright {
@@ -101,6 +117,146 @@ content: "所属アーティスト"
 
 
 
+.webdeck-player {
+    text-align: center;
+/*    width: 50%;*/
+}
+
+
+
+
+
+
+/*psp player*/
+ 
+#psp {
+  width:720px;
+   position:relative;
+   margin-top:50px;
+    
+    margin: auto;
+    
+  }
+  .pspbutton {
+      background:none;
+      border:none;
+      position:absolute;
+      margin-top:135px;
+      
+      margin-left:-690px;
+      }
+
+
+   #bright {
+   margin-left:-628px;
+     }
+     
+  .pspbutton:active {
+    filter: brightness(80%);
+    }    
+      
+      
+  .mySlides {
+  display: none;
+}    
+      
+  #pspstuff {     
+ margin-top:-300px;
+    overflow:hidden;
+    }
+    
+  
+  #pspstuff img {
+    width:400px;
+     height:230px;
+    }
+    
+   #pspstuff iframe {
+       height:230px;
+      width:400px;
+     }  
+     
+
+
+
+/*menu hover rainbows*/
+/*https://codepen.io/mochi-resources/pen/PoWZrJm*/
+.animated-title {
+/*
+	-webkit-text-fill-color: #fff;
+	-webkit-background-clip: text;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #FF0000;
+	-webkit-animation: animatedBackground_c 2s infinite alternate;
+*/
+    
+      background-image: -webkit-linear-gradient(left, #f00, #ff2b00, #f50, #ff8000,#f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
+    -webkit-animation: animatedBackground_a 5s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #0000;
+    background-clip: text;
+}
+/*
+@keyframes animatedBackground_c {
+	0% {-webkit-text-stroke-color: #FFA53A}
+	10% {-webkit-text-stroke-color: #FFE53A}
+	20% {-webkit-text-stroke-color: #E8FF3A}
+	30% {-webkit-text-stroke-color: #A5FF3A}
+	40% {-webkit-text-stroke-color: #3AFF4E}
+	50% {-webkit-text-stroke-color: #3AFFAE}
+	60% {-webkit-text-stroke-color: #3AF3FF}
+	70% {-webkit-text-stroke-color: #3AA2FF}
+	80% {-webkit-text-stroke-color: #4B3AFF}
+	90% {-webkit-text-stroke-color: #B43AFF}
+	100% {-webkit-text-stroke-color: #FF3AEE}
+}
+*/
+
+@keyframes animatedBackground_a {
+    0% { background-position: 0 0 }
+    100% { background-position: -500px 0 }
+}
+
+
+
+
+.menu-links:hover {
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #FF0000;
+    position: relative;
+    top: 0;
+    animation: bounce 0.3s ease infinite alternate;
+}
+/*text bounce animations*/
+@keyframes bounce {
+    100% {
+    top: -.50rem;
+        }
+}
+
+
+
+
+
+/* container */
+/*https://matthewjamestaylor.com/3-column-layouts#responsive-3-column-grid*/
+.responsive-three-column-grid {
+    display:block;
+}
+/* columns */
+.responsive-three-column-grid > * {
+    padding:1rem;
+}
+/* tablet breakpoint */
+@media (min-width:768px) {
+    .responsive-three-column-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
 
 
 
@@ -127,17 +283,24 @@ content: "所属アーティスト"
 
 
 #grindcoreEvian {
-    width: 80%;
+    width: 100%;
+      top: 15%;
 }
 
 #parappaEvian {
-    width: 50%;
+    width: 45%;
+    padding-top: 20%;
 }
 
 #copyright {
     width: 60%;
 }
-
     
     
+    .animated-title {
+        font-size: 5vw;
 }
+/*
+.menu-links {
+    font-size: 3.5vw;   
+}*/

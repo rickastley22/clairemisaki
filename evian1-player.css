@@ -115,45 +115,6 @@ border-radius: 2rem;
 
 
 
-ul button{
-/*    background-color: lightgrey;*/
-    background-image: linear-gradient(to bottom right, white, lightblue);
-    font-family: "Courier New", Courier, monospace;    
-    border-color: steelblue;
-    border-radius: 2px;
-    cursor:url("/media/wii_cursor.cur"), auto;
-    width: 12em;
-}
-
-ul li a {
-  display: block;
-  color: black;
-  padding: 1px 10px;
-/*    border: 2px solid grey;*/
-  text-decoration: none;
-    cursor:url("/media/wii_cursor.cur"), auto;
-    text-align: center;
-}
-
-/*hover translations*/
-ul li a:hover {
-/*  background-color: #111111;*/
-    color: steelblue;
-}
-ul li a:hover span {
-display: none;
-}
-
-.home-button:hover:before {
-content: "ホーム"
-}
-.roster-button:hover:before {
-content: "所属アーティスト"
-}
-
-.scrolling-text {
-   bottom:0;
-}
 
 
 .pixelated {
@@ -175,6 +136,70 @@ font-size: 20px;
     background-color: hotpink;
 /*    color: white;*/
 }
+
+.pause-play button:active {
+    background-color: purple;
+/*    color: white;*/
+}
+
+
+
+
+/*hover animations*/
+.track-item:hover {
+    animation: glitch-1 2s infinite linear !important;
+}
+.pause-play button:hover {
+    animation: glitch-1 2s infinite linear !important;
+}
+/*glitch text animation*/
+@keyframes glitch-1 {
+    0%,
+    12%,
+    15%,
+    52%,
+    55%,
+    82%,
+    85%,
+    100% {
+      opacity: 1;
+      transform: scaleX(1) scaleY(1);
+    }
+
+    13% {
+      opacity: .8;
+      transform: scaleY(2);
+      color: #;
+    }
+
+    53% {
+      opacity: .8;
+      transform: scaleX(.7);
+      color: #;
+    }
+
+    83% {
+      opacity: 8;
+      transform: rotate(-10deg);
+      color: #;
+    }
+  }
+  @keyframes glitch-2 {
+    13% {
+      color: #;
+    }
+
+    53% {
+      color: #;
+    }
+
+    83% {
+      color: #;
+    }
+  }
+    
+
+
 
 
 
@@ -214,6 +239,9 @@ font-size: 20px;
     .title-container {
             width: 100%;
     }
+    
+    
+    
     
     
     .pause-play button {

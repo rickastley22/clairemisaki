@@ -20,6 +20,9 @@
                     <div class="title-container">
                         <h1>track select</h1>
                     </div>
+                    <div class="back-button">
+                        <button><a href="/evian1.html">⬅</a></button>
+                    </div>
                    <div class="track-select-grid"> 
                        <div class="track-item">
                             <img class="image pixelated" id="track-1-img" src="/media/evian1_media/track-1.png" onclick="changeTrack1()">
@@ -52,15 +55,15 @@
                               <source src="/media/evian1_media/evian1-mp3s/5-kddi-madogucci-v3.mp3" type="audio/mpeg">
                             </audio> 
                         </div>
-                        <div class="track-item">
+                       <div id="download-button" class="track-item">
                             <a href="https://www.clairemisaki.org">
                                 <img class="image pixelated" src="/media/evian1_media/download-button.png">
                             </a>
-<!--
+    <!--
                             <button onclick="pauseAudio()" type="button">⏸</button>
                             <button onclick="playAudio()" type="button">▶</button> 
--->
-                        </div>
+    -->
+                       </div>
                     </div>
                     <div class="pause-play">
                         <button onclick="pauseAudio()" type="button">⏸</button>
