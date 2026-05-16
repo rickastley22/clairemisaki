@@ -212,7 +212,7 @@ content: "所属アーティスト"
 }
 
 #sidekick {
-    width: 300px;
+    width: 240px;
     text-align: center;
     position: absolute;
     top: 50%;
@@ -278,7 +278,7 @@ content: "所属アーティスト"
         box-sizing: border-box;
         text-align: center;
 /*        width: 100%;*/
-              width: 185px;
+              width: 153px;
 
 /*        max-width: 450px;*/
         margin: 0 auto;
@@ -290,12 +290,12 @@ content: "所属アーティスト"
 /*        border: 3px solid var(--colour_third);*/
 /*  border: 5px inset black;*/
 
-                  font-size: 17px !important;
+                  font-size: 12.3px !important;
 
               position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-55%, -52%);
+    transform: translate(-55.2%, -52%);
           z-index: 2;
       }
 
@@ -336,7 +336,7 @@ content: "所属アーティスト"
 
       #mp3_player section:first-child {
 
-        height: 9.5em;
+        height: 9.7em;
 /*        min-width: 100px;*/
 /*        min-height: 100px;*/
         align-self: center;
@@ -400,6 +400,8 @@ content: "所属アーティスト"
       #time_indic {
 
         justify-content: space-between;
+          padding-left: 8px;
+          padding-right: 8px;
 
       }
 
@@ -410,7 +412,7 @@ content: "所属アーティスト"
 
         appearance: none;
         background: none;
-        width: 100%;
+        width: 90%;
         height: 5px;
         background-color: var(--colour_third);
         border-radius: 0;
@@ -437,7 +439,7 @@ content: "所属アーティスト"
       #mp3_player input[type=range]::-ms-thumb {
         
         appearance: none;
-        width: 5px;
+        width: 4px;
         height: 15px;
         border: 1px var(--colour_main) solid;
         border-radius: 0;
@@ -461,7 +463,7 @@ content: "所属アーティスト"
       
       #mp3_player input[type=range]::-webkit-slider-runnable-track {
 
-        width: 100%;
+        width: 90%;
         height: 5px;
         background-color: var(--colour_third);
         border-radius: 0;
@@ -472,7 +474,7 @@ content: "所属アーティスト"
 
       #mp3_player input[type=range]::-ms-track {
 
-        width: 100%;
+        width: 90%;
         height: 5px;
         background-color: var(--colour_third);
         border-radius: 0;
