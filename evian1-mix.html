@@ -9,101 +9,115 @@
         <link rel="stylesheet" href="evian1.css">
         <script src="/evian1.js" defer></script>
         
+<!--        retro player-->
+<!--    <link rel="stylesheet" href="player_style.css">-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=VT323&display=swap" rel="stylesheet">
+    <script src="/Retro_YT_player-main/playlist.js"></script>
+
+        
+        
+        
+        
+        <!--        adds icon to tab-->
+        <link rel="icon" type="image/x-icon" href="/media/evian1_media/EVIAN-MENU_0000_parappa-evian.png">
+        
 <!--        mobile support-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
+<!--        shows icon on home screen iphone when saving to bookmark-->
+        <link rel="apple-touch-icon" href="/media/evian1_media/EVIAN-MENU_0000_parappa-evian.png">
 
     </head>
     
     
-    
-    
-    
     <body>
         
+
+<!--
         <div class="webdeck-player">
             <iframe src="/webdeck-player/index.html" height="250" width="600"></iframe>
            <br>
             <button onclick="window.open('/webdeck-player/index.html', 'Web Deck Player', 'height=250, width=600')">Open Pop-out Player</button>
         </div>
+-->
+            
+        
+        <div id="sidekick-container">
+                <img id="sidekick" src="/media/evian1_media/sidekick2.png">
+        </div>
+        
+
+            
+        <div id="mp3_player">
+<!--          <h1 id="song_title">Song title</h1>-->
+<!--
+          <div>
+            <label for="theme_select">Theme:</label>
+            <select name="Select theme" id="theme_select">
+            </select>
+          </div>
+          <div>
+            <label for="playlist_select">Playlist:</label>
+            <select name="Select playlist" id="playlist_select">
+            </select>
+          </div>
+-->
+          <div id="wrapper">
+            <section>
+              <div id="yt_video"></div>
+            </section>
+            <section>
+              <div id="info">
+<!--                <span id="song_title">Song title</span>-->
+<!--                <span id="song_artist">Artist:</span>-->
+<!--                <span id="song_album">Album:</span>-->
+<!--                <span id="song_release_year">Year of release:</span>-->
+              </div>
+              <div id="listened">
+                <input type="range" name="Seek bar" id="seek_bar" min="0" max="100" value="0">
+                <div id="time_indic" class="flex_rnw">
+                  <span id="song_start">00:00</span>
+                  <span id="song_finish">00:00</span>
+                </div>
+              </div>
+              <div>
+                <button id="previous"><img src="/Retro_YT_player-main/player_themes/default/backward.png" width="100%" alt="Previous song."></button>
+                <button id="toggle"><img src="/Retro_YT_player-main/player_themes/default/play.png" width="100%" alt="Play song."></button>
+                <button id="next"><img src="/Retro_YT_player-main/player_themes/default/forward.png" width="100%" alt="Next song."></button>
+              </div>
+              <div id="secondary_controls">
+                <div id="volume" class="flex_rnw">
+                  <button id="volume_button"><img src="/Retro_YT_player-main/player_themes/default/volume.png" width="100%" alt="Volume."></button>
+                  <input type="range" name="Volume bar" id="volume_bar" min="0" max="100" value="50"></input>
+                </div>
+<!--
+                <div>
+                  <label for="shuffle">Shuffle:</label>
+                  <input type="checkbox" name="Shuffle" value="shuffle" id="shuffle">
+                </div>
+-->
+              </div>
+            </section>
+          </div>
+        </div>
+                
+        
         
     
+        
+        
+        
+        
+        
+        
 
         
         <div class="menu-links">
            <a href="/evian1.html"><h1>menu</h1></a>
         </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-<!--        psp player-->
-        
-            <div id='psp'>
-        
-              <img id='psfuckenp' src='/psp-player-media/7haKeYk.png' loading="lazy" >
-               
-               <button id='bleft' class='pspbutton' onclick="plusSlides(-1)"><img src='/psp-player-meia/5SCsnG8.png'  loading="lazy" ></button>
-
-               <button id='bright' class='pspbutton' onclick="plusSlides(1)"><img src='/psp-player/7vrur3w.png'  loading="lazy" ></button>
-      
-                 <div id='pspstuff' class="modal">
-                        <div class="modal-content" >
-                      
-      <!-- video 1 ---------------- ------------------>
-                        <div class="mySlides" display='block'>
-                           <iframe width="560" height="315" src="https://www.youtube.com/embed/E_za7jPrqpQ?si=A3zxiyKuGz_deJMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                          </div> 
-      <!---- video 2---------------- ------------------>      
-                        
-                          <div class="mySlides">
-                            <iframe loading='lazy' width="560" height="315" src="https://www.youtube.com/embed/b_NP_kG6Fa4?si=dE4rMo4IumjImHtN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
-                           </div>                      
-  <!------ video 3---------------- ------------------>      
-
-           <div class="mySlides">
-              <iframe loading='lazy' width="560" height="315" src="https://www.youtube.com/embed/b_NP_kG6Fa4?si=dE4rMo4IumjImHtN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>   
-                  </div> 
-                          
-  <!------ script---------------- ------------------>                     
-                     
-                <script>
-                        var slideIndex = 1;
-                        showSlides(slideIndex);
-                        
-                        // Next/previous controls
-                        function plusSlides(n) {
-                          showSlides(slideIndex += n);
-                        }
-                        
-                        function showSlides(n) {
-                          var i;
-                          var slides = document.getElementsByClassName("mySlides");
-                          if (n > slides.length) {slideIndex = 1}
-                          if (n < 1) {slideIndex = slides.length}
-                          for (i = 0; i < slides.length; i++) {
-                            slides[i].style.display = "none";
-                          }
-                          slides[slideIndex-1].style.display = "block";
-                        }
-                        </script>    
-                      
-                      </div>
-                    </div>
-            </div>
-        
-        
-        
-        
-        
-        
-        
         
         
 

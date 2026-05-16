@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP3 Player</title>
+    <link rel="stylesheet" href="player_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=VT323&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    
+    <div id="mp3_player">
+      <h1 id="song_title">Song title</h1>
+      <div>
+        <label for="theme_select">Theme:</label>
+        <select name="Select theme" id="theme_select">
+          <!--Options generate in JavaScript-->
+        </select>
+      </div>
+      <div>
+        <label for="playlist_select">Playlist:</label>
+        <select name="Select playlist" id="playlist_select">
+        <!-- Options generate in JavaScript -->
+        </select>
+      </div>
+      <div id="wrapper">
+        <section>
+          <div id="yt_video"></div>
+        </section>
+        <section>
+          <div id="info">
+            <span id="song_artist">Artist:</span>
+            <span id="song_album">Album:</span>
+            <span id="song_release_year">Year of release:</span>
+          </div>
+          <div id="listened">
+            <input type="range" name="Seek bar" id="seek_bar" min="0" max="100" value="0">
+            <div id="time_indic" class="flex_rnw">
+              <span id="song_start">00:00</span>
+              <span id="song_finish">00:00</span>
+            </div>
+          </div>
+          <div>
+            <button id="previous"><img src="player_themes/default/backward.png" width="100%" alt="Previous song."></button>
+            <button id="toggle"><img src="player_themes/default/play.png" width="100%" alt="Play song."></button>
+            <button id="next"><img src="player_themes/default/forward.png" width="100%" alt="Next song."></button>
+          </div>
+          <div id="secondary_controls">
+            <div id="volume" class="flex_rnw">
+              <button id="volume_button"><img src="player_themes/default/volume.png" width="100%" alt="Volume."></button>
+              <input type="range" name="Volume bar" id="volume_bar" min="0" max="100" value="50"></input>
+            </div>
+            <div>
+              <label for="shuffle">Shuffle:</label>
+              <input type="checkbox" name="Shuffle" value="shuffle" id="shuffle">
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="playlist.js"></script>
+  </body>
+</html>
