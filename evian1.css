@@ -212,7 +212,7 @@ content: "所属アーティスト"
 }
 
 #sidekick {
-    width: 360px;
+    width: 300px;
     text-align: center;
     position: absolute;
     top: 50%;
@@ -278,7 +278,7 @@ content: "所属アーティスト"
         box-sizing: border-box;
         text-align: center;
 /*        width: 100%;*/
-              width: 222px;
+              width: 185px;
 
 /*        max-width: 450px;*/
         margin: 0 auto;
@@ -286,15 +286,16 @@ content: "所属アーティスト"
         font-family: "Source Code Pro", monospace;
         font-weight: 400;
         font-style: normal;
-        background-color: var(--colour_main);
+        background-color: black;
 /*        border: 3px solid var(--colour_third);*/
-          
+/*  border: 5px inset black;*/
+
                   font-size: 17px !important;
 
               position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-54.5%, -52%);
+    transform: translate(-55%, -52%);
           z-index: 2;
       }
 
@@ -335,7 +336,7 @@ content: "所属アーティスト"
 
       #mp3_player section:first-child {
 
-        height: 12.5em;
+        height: 9.5em;
 /*        min-width: 100px;*/
 /*        min-height: 100px;*/
         align-self: center;
@@ -348,7 +349,7 @@ content: "所属アーティスト"
         flex-flow: column wrap;
         justify-content: center;
         align-items: center;
-        gap: 0.1em;
+/*        gap: 0.1em;*/
 
       }
 
@@ -366,6 +367,7 @@ content: "所属アーティスト"
 
         width: 100%;
         height: 94%;
+
 /*          height: 15em;*/
 /*        border: var(--colour_second) 3px solid;*/
 /*        box-shadow: var(--colour_third) 5px 3px;*/
